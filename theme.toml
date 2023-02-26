@@ -1,0 +1,9 @@
+name = "dola"
+description = "A simple portfolio theme."
+licence = "AGPLv3"
+min_version = "0.17.1"
+
+[author]
+name = "dancs-dev"
+homepage = "https://dancs.dev"
+
