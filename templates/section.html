@@ -5,19 +5,23 @@
 </h1>
 <ul class="card-container">
   {% for page in section.pages %}
+  <a class="card-link" href="{{ page.permalink | safe}}">
   <li class="card">
     <header class="card-header">
-      {% if page.extra.icons %}
-      {% for icon in page.extra.icons %}
-      <i class="fab fa-{{ icon }}" style='font-size:30px; padding: 3px'></i>
-      {% endfor %}
-      {% endif %}
-    </header>
-    <p class="card-content">
-      {{ page.description }}
-    </p>
-    <a class="button-link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
-  </li>
+        {% if page.extra.icons %}
+          {% for icon in page.extra.icons %}
+            <i class="fab fa-{{ icon }}" style='font-size:30px; padding: 3px'></i>
+          {% endfor %}
+        {% endif %}
+      </header>
+      <strong class="card-title">
+        {{ page.title }}
+      </strong>
+      <p class="card-content">
+        {{ page.description }}
+      </p>
+    </li>
+  </a>
   {% endfor %}
 </ul>
 {% endblock content %}
