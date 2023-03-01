@@ -57,7 +57,7 @@ Icons can simply be added to your markdown page files.
 1. Create an `icons` variable.
 1. Choose fontawesome icons; by default, icons can be chosen by simply adding the name of the icon, e.g., `rust`. The HTML template will assume the icon is under the `fab` fontawesome category.
 
-```toml`
+```toml
 icons = [
     "github",
     "python",
