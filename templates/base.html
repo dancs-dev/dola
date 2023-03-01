@@ -18,6 +18,18 @@
   <main>
     {% block content %} {% endblock %}
   </main>
+
+  <footer>
+  {% if config.extra.contacts %}
+  {% for contact in config.extra.contacts %}
+
+  <a href="{{ contact.link }}" target="_blank"><i class="{{ contact.icon }}" style='font-size:30px; padding: 3px'></i></a>
+
+  {% endfor %}
+
+  {% endif %}
+  </footer>
+
 </body>
 
 </html>
