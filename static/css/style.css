@@ -36,6 +36,7 @@ footer {
   background: var(--alt-bg-color);
   width: 100%;
   height: 100%;
+  margin-top: 0.5em;
 }
 
 footer a {
