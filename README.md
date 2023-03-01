@@ -65,5 +65,5 @@ icons = [
 ]
 ```
 
-These icons will appear in the card on the section page that links to this project page.
+These icons will appear in the card on the section page that links to this markdown page.
 
