@@ -13,7 +13,7 @@ This repository contains a theme that is intended for use as follows:
 1. Initialise your site [using Zola](https://www.getzola.org/documentation/getting-started/overview/#initialize-site).
 1. Remove all content generated except the `content` and `themes` directories, and the `config.toml` file.
 1. `cd` into themes and `git clone` this repository.
-1. `cd` back into your site directory and copy the example content files using `cp -r themes/dola/content content`/
+1. `cd` back into your site directory and copy the example content files using `cp -r themes/dola/content content`.
 1. Set your site to use this theme by adding `theme = "dola"` to the top of your `config.toml`.
 
 ## Customisation using `config.toml`
@@ -47,3 +47,4 @@ Add your contact details to the footer by creating a `contacts` variable:
 contacts = [{icon = "fab fa-github", link = "https://github.com/dancs-dev"}, {icon = "fas fa-envelope", link = "mailto:email@example.com"}]
 ```
 
+By default, you can choose [fontawesome](https://fontawesome.com/v5/search) icons.
