@@ -2,8 +2,10 @@
 
 {% block content %}
 <h1>
-  This is my blog made with Zola.
+  {{ section.title }}
 </h1>
-<p>Click <a href="{{ get_url(path='@/projects/_index.md') }}">here</a> to see my posts.</p>
+
+{{ section.content | safe }}
+
 {% endblock content %}
 
