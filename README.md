@@ -20,7 +20,7 @@ This repository contains a theme that is intended for use as follows:
 
 Further customisation can be done by adding entries under `[extra]` in `config.toml`.
 
-## Title
+### Page title
 
 Set the title by creating a `title` variable:
 
@@ -48,3 +48,22 @@ contacts = [{icon = "fab fa-github", link = "https://github.com/dancs-dev"}, {ic
 ```
 
 By default, you can choose [fontawesome](https://fontawesome.com/v5/search) icons.
+
+## Page icons
+
+Icons can simply be added to your markdown page files.
+
+1. Create an `[extra]` section in your markdown page.
+1. Create an `icons` variable.
+1. Choose fontawesome icons; by default, icons can be chosen by simply adding the name of the icon, e.g., `rust`. The HTML template will assume the icon is under the `fab` fontawesome category.
+
+```toml`
+icons = [
+    "github",
+    "python",
+    "rust"
+]
+```
+
+These icons will appear in the card on the section page that links to this project page.
+
